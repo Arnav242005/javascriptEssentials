@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Let's Test It</h1>
+  <p>Select and copy this text to test the copy event.</p>
+
+  <script>
+    document.addEventListener('copy', function(event) {
+      event.preventDefault();
+      event.clipboardData.setData('text/plain', 'Content copying is disabled on this page.');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .form {
+      background-color: #f1f6fc;
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="form">
+    <form onsubmit="Name(
+    
+    
+    )">
+      <label>First Name</label><br>
+      <input type="text" id="first"><br>
+      <label>Last Name</label><br>
+      <input type="text" id="second"><br>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function Name() {
+      event.preventDefault(); 
+      const firstName = document.querySelector("#first").value;
+      const lastName = document.querySelector("#second").value;
+
+      console.log("First Name:", firstName);
+      console.log("Last Name:", lastName);
+    }
+  </script>
+</body>
+</html>
